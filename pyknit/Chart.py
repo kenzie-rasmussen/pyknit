@@ -102,9 +102,12 @@ stitch_legend_japanese = {  # Legend for Japanese Symbols. Only a portion of ava
     "NA": Stitch(
         instruction="no stitch", 
         symbol=os.path.join(symbol_dir + "\japanese", "no-stitch.png"), width=1),
+    "sl": Stitch(
+        instruction="slip stitch", 
+        symbol=os.path.join(symbol_dir + "\japanese", "sl.png"), width=1),
     "k": Stitch(
         instruction="knit", 
-        symbol=os.path.join(symbol_dir + "\japanese", "box.png"), width=1),
+        symbol=os.path.join(symbol_dir + "\japanese", "knit.png"), width=1),
     "ktbl": Stitch(
         instruction="knit through the back loop", 
         symbol=os.path.join(symbol_dir + "\japanese", "ktbl.png"), width=1),
@@ -117,6 +120,7 @@ stitch_legend_japanese = {  # Legend for Japanese Symbols. Only a portion of ava
     "k4tog": Stitch(
         instruction="knit four together", 
         symbol=os.path.join(symbol_dir + "\japanese", "k4tog.png"), width=1),
+    
     "yo": Stitch(
         instruction="yarn over", 
         symbol=os.path.join(symbol_dir + "\japanese", "yarn_over.png"), width=1),
@@ -125,13 +129,14 @@ stitch_legend_japanese = {  # Legend for Japanese Symbols. Only a portion of ava
         symbol=os.path.join(symbol_dir + "\japanese", "byo.png"), width=1),
     "p": Stitch(
         instruction="purl", 
-        symbol=os.path.join(symbol_dir + "\japanese", "purl.png"), width=1),
+        symbol=os.path.join(symbol_dir + "\japanese", "box.png"), width=1),
     "ptbl": Stitch(
         instruction="purl through the back loop", 
         symbol=os.path.join(symbol_dir + "\japanese", "ptbl.png"), width=1),
     "p2tog": Stitch(
         instruction="purl two together", 
         symbol=os.path.join(symbol_dir + "\japanese", "p2tog.png"), width=1),
+    
     "ssk": Stitch(
         instruction="[slip 1 kwise] twice, return both back to LN, k2togtbl",
         symbol=os.path.join(symbol_dir + "\japanese", "ssk.png"), width=1),  # left leaning decrease
@@ -150,6 +155,7 @@ stitch_legend_japanese = {  # Legend for Japanese Symbols. Only a portion of ava
     "s3kp3": Stitch(
         instruction="[slip 1 kwise] 3 times, k1, psso", 
         symbol=os.path.join(symbol_dir + "\japanese", "s3kp3"),width=1),
+    
     "C1-1L": Stitch(
         instruction="With RN, go behind first st and k second st without removing; k first st, slip both off LN",
         symbol=os.path.join(symbol_dir + "\japanese", "C1-1L.png"), width=2),
@@ -162,13 +168,66 @@ stitch_legend_japanese = {  # Legend for Japanese Symbols. Only a portion of ava
     "C1-1PR": Stitch(
         instruction="With RN, go in front of first st and k second st without removing, p first st, slip both off LN",
         symbol=os.path.join(symbol_dir + "\japanese", "C1-1PR.png"), width=2),
+    
+    "C1-2L": Stitch(
+        instruction="Place 1 st on CN, hold to front, k2; k1 from CN",
+        symbol=os.path.join(symbol_dir + "\japanese", "C1-2L.png"), width=3),
+    "C1-2R": Stitch(
+        instruction="Place 2 sts on CN, hold to back, k1; k2 from CN",
+        symbol=os.path.join(symbol_dir + "\japanese", "C1-2R.png"), width=3),
+    
+    "C2-1L": Stitch(
+        instruction="Place 2 sts on CN, hold to front, k1; k2 from CN",
+        symbol=os.path.join(symbol_dir + "\japanese", "C2-1L.png"), width=3),
+    "C2-1R": Stitch(
+        instruction="Place 1 sts on CN, hold to back, k2; k1 from CN",
+        symbol=os.path.join(symbol_dir + "\japanese", "C2-1R.png"), width=3),
+    "C2-1PL": Stitch(
+        instruction="Place 2 sts on CN, hold to front, p1; k2 from CN",
+        symbol=os.path.join(symbol_dir + "\japanese", "C2-1PL.png"), width=3),
+    "C2-1PR": Stitch(
+        instruction="Place 1 sts on CN, hold to back, k2; p1 from CN",
+        symbol=os.path.join(symbol_dir + "\japanese", "C2-1PR.png"), width=3),
+    
+    "C2-1K1PL": Stitch(
+        instruction="Place 2 sts on CN, hold to front, k1, p1; k2 from CN",
+        symbol=os.path.join(symbol_dir + "\japanese", "C2-1K1PL.png"), width=4),
+    "C2-1K1PR": Stitch(
+        instruction="Place 2 sts on CN, hold to back, k2; k1, p1 from CN",
+        symbol=os.path.join(symbol_dir + "\japanese", "C2-1K1PR.png"), width=4),
+    "C2-1P1KL": Stitch(
+        instruction="Place 2 sts on CN, hold to front, p1, k1; k2 from CN",
+        symbol=os.path.join(symbol_dir + "\japanese", "C2-1P1KL.png"), width=4),
+    "C2-1P1KR": Stitch(
+        instruction="Place 2 sts on CN, hold to back, k2; p1, k1 from CN",
+        symbol=os.path.join(symbol_dir + "\japanese", "C2-1P1KR.png"), width=4),
+    
+    "C2-2L": Stitch(
+        instruction="Place 2 sts on CN, hold to front, k2; k2 from CN",
+        symbol=os.path.join(symbol_dir + "\japanese", "C2-2L.png"), width=4),
+    "C2-2R": Stitch(
+        instruction="Place 2 sts on CN, hold to back, k2; k2 from CN",
+        symbol=os.path.join(symbol_dir + "\japanese", "C2-2R.png"), width=4),
+    "C2-2PL": Stitch(
+        instruction="Place 2 sts on CN, hold to front, p2; k2 from CN",
+        symbol=os.path.join(symbol_dir + "\japanese", "C2-2PL.png"), width=4),
+    "C2-2PR": Stitch(
+        instruction="Place 2 sts on CN, hold to back, k2; p2 from CN",
+        symbol=os.path.join(symbol_dir + "\japanese", "C2-2PR.png"), width=4),
+    
     "C4L": Stitch(
         instruction="Place 1 st on CN, hold to front, k3; k1 from CN",
         symbol=os.path.join(symbol_dir + "\japanese", "C4L.png"), width=4),
     "C4R": Stitch(
         instruction="Place 3 sts on CN, hold to back, k1; k3 from CN",
         symbol=os.path.join(symbol_dir + "\japanese", "C4R.png"), width=4),
-
+    
+    "z": Stitch(
+        instruction="knit on wrong side",
+        symbol=os.path.join(symbol_dir + "\japanese", "box.png"), width=1),
+    "q": Stitch(
+        instruction="purl on wrong side", 
+        symbol=os.path.join(symbol_dir + "\japanese", "knit.png"), width=1),
 }
 
 
